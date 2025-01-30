@@ -171,17 +171,5 @@
     outline: none;
 }
 
-.navbar-light .navbar-nav .nav-link {
-    font-weight: bold !important; 
-    color: #ffffff !important;
-}
 
-.navbar-light .navbar-toggler-icon {
-    filter: invert(1); /* Garante que o ícone do menu fique branco */
-}
-
-body {
-    background-color: #041991 !important;
-    color: white !important;
-}
 
