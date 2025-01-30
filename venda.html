@@ -15,19 +15,20 @@
 <body>
     <!-- Navbar carregada dinamicamente -->
     <div id="navbar"></div>
+
     <script>
-      fetch('NavBar.html')
-          .then(response => {
-              if (!response.ok) {
-                  throw new Error('Erro ao carregar a navbar: ' + response.statusText);
-              }
-              return response.text();
-          })
-          .then(html => {
-              document.getElementById('navbar').innerHTML = html;
-          })
-          .catch(err => console.error(err));
-  </script>
+        fetch('NavBar.html')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Erro ao carregar a navbar: ' + response.statusText);
+                }
+                return response.text();
+            })
+            .then(html => {
+                document.getElementById('navbar').innerHTML = html;
+            })
+            .catch(err => console.error(err));
+    </script>
   
 
     <!-- Tabela de venda -->
