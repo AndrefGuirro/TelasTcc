@@ -8,13 +8,46 @@
     padding: 0;
 }
 
+/* Ajuste do menu de navegação */
 .navbar-nav .nav-link {
-    font-size: 18px; /* Aumenta o tamanho da fonte */
-    font-weight: bold; /* Deixa a letra mais grossa */
-    color: #ffffff; /* Deixa o texto branco para contraste */
-    text-transform: uppercase; /* Deixa as letras todas maiúsculas (opcional) */
+    font-size: 18px !important; /* Força o tamanho */
+    font-weight: bold !important; /* Força a letra mais grossa */
+    color: #ffffff !important; /* Força a cor branca */
+    text-transform: uppercase !important;
+}
+
+/* Garante que a cor do texto permaneça branca */
+.navbar-light .navbar-nav .nav-link {
     color: #ffffff !important;
-  }
+}
+
+/* Ícone do menu hamburguer branco */
+.navbar-light .navbar-toggler-icon {
+    filter: invert(1) !important;
+}
+
+/* Correção de cor do texto quando a navbar está colapsada */
+.navbar-collapse.show .nav-link {
+    color: #ffffff !important;
+}
+
+/* Corrige possíveis estilos do Bootstrap que podem estar interferindo */
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+    color: #ffffff !important;
+}
+
+/* Evita que a navbar fique desproporcional no mobile */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    .navbar-nav .nav-link {
+        font-size: 16px !important; /* Ajusta o tamanho para telas menores */
+    }
+}
+
+
 
 
 
@@ -48,13 +81,6 @@
 .custom-table-header th {
     background-color: #d3d3d3; /* Cinza escuro */
     border: 2px solid #888;    /* Contorno mais forte */
-    color: #000;               /* Cor do texto */
-}
-
-/* Cor de fundo mais escura e contorno mais forte no cabeçalho */
-.custom-table-header th {
-    background-color: #d3d3d3; /* Cinza escuro */
-    border: 2px solid #000;    /* Contorno preto forte */
     color: #000;               /* Cor do texto */
 }
 
@@ -170,16 +196,3 @@
     box-shadow: 0 0 5px rgba(21, 111, 245, 0.4);
     outline: none;
 }
-
-.navbar-nav .nav-link {
-    font-size: 18px !important; /* Força o tamanho */
-    font-weight: bold !important; /* Força a letra mais grossa */
-    color: #ffffff !important; /* Força a cor branca */
-    text-transform: uppercase !important;
-}
-
-.navbar-light .navbar-toggler-icon {
-    filter: invert(1) !important; /* Garante que o ícone do menu fique branco */
-}
-
-
