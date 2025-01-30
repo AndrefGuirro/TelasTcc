@@ -171,5 +171,15 @@
     outline: none;
 }
 
+.navbar-nav .nav-link {
+    font-size: 18px !important; /* Força o tamanho */
+    font-weight: bold !important; /* Força a letra mais grossa */
+    color: #ffffff !important; /* Força a cor branca */
+    text-transform: uppercase !important;
+}
+
+.navbar-light .navbar-toggler-icon {
+    filter: invert(1) !important; /* Garante que o ícone do menu fique branco */
+}
 
 
